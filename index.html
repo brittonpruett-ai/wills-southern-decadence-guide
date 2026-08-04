@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Will's Southern Decadence 2026 Guide</title>
+<style>
+:root{--ink:#211b25;--muted:#6d6570;--paper:#fff9f3;--card:#fff;--plum:#5c214f;--gold:#b78a45;--line:#e5dbe2;--soft:#f7edf3;--night:#241a2c;--green:#2f6b55}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink);line-height:1.45}
+.wrap{max-width:1080px;margin:auto;padding:16px}.hero{background:linear-gradient(135deg,var(--night),var(--plum));color:#fff;border-radius:22px;padding:28px;margin-bottom:18px}
+.hero h1{font-size:clamp(32px,6vw,58px);line-height:1;margin:0 0 10px}.hero p{margin:0;max-width:820px;color:#f5eaf2}.kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#efd48f;font-weight:800}
+.grid{display:grid;gap:14px}.g2{grid-template-columns:repeat(2,minmax(0,1fr))}.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}label{display:block;font-weight:800;margin-bottom:6px}
+select,button{width:100%;padding:12px;border-radius:12px;font-size:16px}select{border:1px solid var(--line);background:#fff;margin-bottom:12px}
+button{border:0;background:var(--plum);color:#fff;font-weight:800;cursor:pointer}.meta{color:var(--muted);font-size:14px}.section{font-size:25px;margin:28px 0 12px}
+.badge{display:inline-block;background:var(--soft);color:var(--plum);border-radius:999px;padding:5px 9px;font-size:12px;font-weight:800;margin:0 6px 6px 0}
+.plan{border-top:6px solid var(--gold)}.plan h3{margin:0 0 4px}.slot{padding:10px 0;border-bottom:1px solid var(--line)}.slot:last-child{border-bottom:0}.slot b{display:block;color:var(--plum)}
+.warning{background:#fff3d7;border:1px solid #e7c678;border-radius:16px;padding:15px}.safety{background:#edf7f2;border:1px solid #b8dacb;border-radius:16px;padding:16px}
+.status{font-size:11px;font-weight:900;text-transform:uppercase;padding:5px 8px;border-radius:999px;float:right}.confirmed{background:#dff2e8;color:#225f48}.pending{background:#fff0c9;color:#72530d}
+a{color:var(--plum);font-weight:750}.venue h3{margin-bottom:4px}.filters{position:sticky;top:0;z-index:2;background:var(--paper);padding-top:2px}
+.footer{padding:26px 0 8px;color:var(--muted);font-size:13px}ul{padding-left:20px}
+@media(max-width:820px){.g2,.g3{grid-template-columns:1fr}.filters{position:static}.hero{padding:22px}.wrap{padding:12px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<section class="hero">
+<div class="kicker">Built for Will • mentor, best friend, wine brain, occasional enemy of bedtime</div>
+<h1>Will’s Southern Decadence</h1>
+<p>Choose the day, appetite, budget and desired level of dignity. Receive three specific New Orleans plans with named restaurants, bars, events and late-night recovery options.</p>
+</section>
+
+<section class="filters grid g2">
+<div class="card">
+<label for="day">Day</label>
+<select id="day">
+<option value="thu">Thursday, September 3 — opening moves</option>
+<option value="fri">Friday, September 4 — pools and poor restraint</option>
+<option value="sat">Saturday, September 5 — maximum Decadence</option>
+<option value="sun">Sunday, September 6 — parade day</option>
+<option value="mon">Monday, September 7 — final acts and recovery</option>
+</select>
+
+<label for="vibe">Primary vibe</label>
+<select id="vibe">
+<option value="high">High-end food and wine</option>
+<option value="classic">Classic gay New Orleans</option>
+<option value="inclusive">Queer, trans and gender-expansive</option>
+<option value="dive">Dive bars and low lighting</option>
+<option value="adult">Legal adult nightlife</option>
+<option value="mixed">High-low: elegant first, feral later</option>
+</select>
+
+<label for="budget">Budget</label>
+<select id="budget">
+<option value="decadent">Decadent</option>
+<option value="comfortable">Comfortable</option>
+<option value="cheap">Cheap chaos</option>
+</select>
+
+<label for="energy">How late?</label>
+<select id="energy">
+<option value="civilized">Dinner and drinks</option>
+<option value="social">Past midnight</option>
+<option value="feral">Until someone loses a shoe</option>
+<option value="late">After 2 a.m.</option>
+</select>
+
+<button id="build">Build Three Plans</button>
+</div>
+
+<div class="card">
+<h2 id="resultTitle">Thursday: three tailored options</h2>
+<p id="resultNote" class="meta">Event details marked “pending” have not yet released a complete 2026 schedule.</p>
+<div class="warning"><strong>Will, be serious:</strong><p id="warningText">You may discuss vintages, but you may not correct strangers before the second glass.</p></div>
+</div>
+</section>
+
+<section id="plans" class="grid g3" style="margin-top:14px" aria-live="polite"></section>
+
+<h2 class="section">2026 day-by-day debauchery anchors</h2>
+<section class="grid g2">
+<div class="card"><span class="status confirmed">Confirmed</span><h3>Thursday, September 3</h3><p><strong>Oz:</strong> weekend-pass pickup begins at 6 p.m.; guest DJs and go-go performers run all weekend.</p><p><strong>Bourbon Pub:</strong> VIP weekend includes a welcome booze-and-bites reception; specific time remains pending.</p><p><strong>Decadent Ducks:</strong> Early Arrivals Cocktail Party, 6–8 p.m.; location TBD.</p></div>
+<div class="card"><span class="status confirmed">Confirmed</span><h3>Friday, September 4</h3><p><strong>F Tour “Slippery When Wet”:</strong> pool party, 1–5 p.m., with DJ, cash bar and go-go performers; location provided to ticket holders.</p><p><strong>Decadent Ducks:</strong> Omni guest events include noon lunch, 2–4 p.m. pool party, 6–8 p.m. welcome party and a private underwear/jockstrap party.</p><p><strong>Her Haus:</strong> 2026 weekend begins, but detailed daily programming remains pending.</p></div>
+<div class="card"><span class="status confirmed">Confirmed</span><h3>Saturday, September 5</h3><p><strong>Decadent Ducks:</strong> Cuban Creations cigar event, 2–4 p.m. Omni pool party and public FURBALL from 10 p.m.–2 a.m.</p><p><strong>Her Haus:</strong> femme-forward weekend programming is announced; exact 2026 Saturday details remain pending.</p><p><strong>Oz and Bourbon Pub:</strong> full Southern Decadence club programming, with details continuing to develop.</p></div>
+<div class="card"><span class="status pending">Route pending</span><h3>Sunday, September 6</h3><p><strong>Southern Decadence Parade:</strong> traditional Sunday parade through the French Quarter; exact 2026 time and route are still pending.</p><p><strong>Decadent Ducks:</strong> parade-viewing event and 2–4 p.m. Omni pool party for hotel guests.</p><p><strong>Golden Lantern:</strong> the original home of Southern Decadence and a natural parade-day anchor.</p></div>
+<div class="card"><span class="status confirmed">Confirmed</span><h3>Monday, September 7</h3><p><strong>Oz and Bourbon Pub:</strong> weekend programming continues through Labor Day.</p><p><strong>Decadent Ducks:</strong> farewell programming continues through Monday evening.</p><p><strong>Best strategic move:</strong> brunch, one civilized drink, then decide whether dignity is returning or merely delayed.</p></div>
+<div class="card"><span class="status pending">Check closer</span><h3>Schedule discipline</h3><p>Her Haus, individual drag shows, parade routing and several venue lineups are still developing. The guide names them only where organizers have published 2026 information.</p></div>
+</section>
+
+<h2 class="section">Named venue toolbox</h2>
+<section class="grid g3">
+<div class="card venue"><h3>High-end dinner</h3><p>Restaurant R’evolution, Jewel of the South, Galatoire’s, Brennan’s, Saint-Germain and Palm&Pine.</p><small>Reserve early and recheck Labor Day hours.</small></div>
+<div class="card venue"><h3>Wine and cocktails</h3><p>Patrick’s Bar Vin, Bacchanal Wine, Jewel of the South, Cane & Table, Bar Marilou and The Will & The Way.</p></div>
+<div class="card venue"><h3>Classic gay Quarter</h3><p>Golden Lantern, Café Lafitte in Exile, Good Friends, Oz, Bourbon Pub & Parade and Napoleon’s Itch.</p></div>
+<div class="card venue"><h3>Leather / adult energy</h3><p>The Phoenix, Rawhide, FURBALL, Oz go-go programming, Bourbon Pub and licensed Bourbon Street strip clubs.</p></div>
+<div class="card venue"><h3>Dive-bar lane</h3><p>Chart Room, Erin Rose, Aunt Tiki’s, Golden Lantern, Three Legged Dog and Buffa’s.</p></div>
+<div class="card venue"><h3>After-hours food</h3><p>The Will & The Way, Three Legged Dog, Buffa’s, Melba’s, Dat Dog Frenchmen, Port of Call and Bar Redux.</p></div>
+</section>
+
+<section class="safety" style="margin-top:22px">
+<h2>After-hours operating standards</h2>
+<ul>
+<li>The unavailable “summon a hooker” button remains unavailable. People are not room service.</li>
+<li>Licensed adult entertainment, go-go shows, burlesque and consensual socializing are available without turning the trip into a police report.</li>
+<li>Meet new people publicly first, share location with a friend and verify rides in the app.</li>
+<li>Consent must be clear, mutual and ongoing. Intoxication complicates consent.</li>
+<li>Eat before the night becomes a documentary. Hydration is not surrender.</li>
+<li>Recheck venue hours, tickets and event pages before leaving the hotel.</li>
+</ul>
+</section>
+
+<div class="footer">Personal planning guide, not an official Southern Decadence publication. Restaurants, hours, tickets and schedules can change.</div>
+</main>
+
+<script>
+var restaurants={
+high:{
+decadent:["Restaurant R’evolution","Jewel of the South","Galatoire’s"],
+comfortable:["Palm&Pine","Cane & Table","Brennan’s"],
+cheap:["Napoleon House","Verti Marte","Killer PoBoys at Erin Rose"]
+},
+classic:{
+decadent:["Brennan’s","Galatoire’s","Restaurant R’evolution"],
+comfortable:["Palm&Pine","Napoleon House","Port of Call"],
+cheap:["Verti Marte","Killer PoBoys at Erin Rose","Three Legged Dog"]
+},
+inclusive:{
+decadent:["Jewel of the South","Saint-Germain","Brennan’s"],
+comfortable:["Palm&Pine","Cane & Table","Bacchanal Wine"],
+cheap:["Dat Dog Frenchmen","Melba’s","Bar Redux"]
+},
+dive:{
+decadent:["Jewel of the South","Bouligny Tavern","Bacchanal Wine"],
+comfortable:["Port of Call","Napoleon House","The Will & The Way"],
+cheap:["Killer PoBoys at Erin Rose","Three Legged Dog","Verti Marte"]
+},
+adult:{
+decadent:["Restaurant R’evolution","Jewel of the South","Brennan’s"],
+comfortable:["Palm&Pine","Cane & Table","The Will & The Way"],
+cheap:["Verti Marte","Three Legged Dog","Dat Dog Frenchmen"]
+},
+mixed:{
+decadent:["Restaurant R’evolution","Jewel of the South","Galatoire’s"],
+comfortable:["Palm&Pine","Cane & Table","Bacchanal Wine"],
+cheap:["Napoleon House","Killer PoBoys at Erin Rose","Verti Marte"]
+}
+};
+
+var bars={
+high:["Patrick’s Bar Vin","Jewel of the South","Bar Marilou","Bacchanal Wine"],
+classic:["Golden Lantern","Café Lafitte in Exile","Good Friends","Oz","Bourbon Pub & Parade"],
+inclusive:["Golden Lantern","AllWays Lounge","Bourbon Pub & Parade","Good Friends"],
+dive:["Chart Room","Erin Rose","Aunt Tiki’s","Golden Lantern","Buffa’s"],
+adult:["The Phoenix","Rawhide","Oz","Bourbon Pub & Parade","Penthouse Club"],
+mixed:["Jewel of the South","Golden Lantern","Oz","Chart Room","Bourbon Pub & Parade"]
+};
+
+var lateFood={
+civilized:["The Will & The Way","Port of Call","Bouligny Tavern"],
+social:["The Will & The Way","Three Legged Dog","Buffa’s"],
+feral:["Melba’s","Dat Dog Frenchmen","Bar Redux"],
+late:["Melba’s","Three Legged Dog","Buffa’s"]
+};
+
+var dayEvents={
+thu:[
+["Oz weekend-pass pickup","Pickup begins at 6 p.m.; guest DJs and go-go performers are scheduled throughout the weekend."],
+["Bourbon Pub VIP welcome","Weekend pass includes a booze-and-bites welcome reception; exact time is still pending."],
+["Decadent Ducks Early Arrivals","6–8 p.m.; location remains TBD."]
+],
+fri:[
+["F Tour: Slippery When Wet","Pool party from 1–5 p.m. with DJ, cash bar and go-go performers; ticket holders receive the location."],
+["Decadent Ducks Friday","Omni guest events include lunch, 2–4 p.m. pool party, 6–8 p.m. welcome party and a private underwear/jockstrap party."],
+["Her Haus opening day","Femme-forward weekend begins September 4; detailed 2026 Friday programming remains pending."]
+],
+sat:[
+["FURBALL","Public ticketed bear/leather-oriented party from 10 p.m.–2 a.m."],
+["Cuban Creations cigar event","Decadent Ducks event at 533 Toulouse Street; time is still TBD."],
+["Her Haus Saturday","Femme-forward programming is announced for the weekend; exact 2026 Saturday schedule remains pending."]
+],
+sun:[
+["Southern Decadence Parade","Traditional Sunday parade; exact 2026 route and time remain pending."],
+["Golden Lantern parade-day orbit","Original home of Southern Decadence and a natural pre- or post-parade stop."],
+["Decadent Ducks Sunday pool","2–4 p.m. at the Omni for hotel guests, plus a route-dependent parade-viewing event."]
+],
+mon:[
+["Oz Labor Day finale","Weekend-pass programming continues through Monday."],
+["Bourbon Pub final round","Southern Decadence programming continues through Monday."],
+["Recovery with options","Brunch or lunch first, then one final Quarter circuit if the body has filed no formal objection."]
+]
+};
+
+var warnings={
+civilized:"You may discuss vintages, but you may not correct strangers before the second glass.",
+social:"You are allowed three new best friends. The fourth requires committee approval.",
+feral:"No adopting a go-go dancer, buying a timeshare or changing your legal name before breakfast.",
+late:"The city is open. Your decision-making department is not. Eat, hydrate, verify the ride, then reassess."
+};
+
+function byId(id){return document.getElementById(id);}
+function pick(arr,index){return arr[index % arr.length];}
+
+function build(){
+var day=byId("day").value;
+var vibe=byId("vibe").value;
+var budget=byId("budget").value;
+var energy=byId("energy").value;
+var dayNames={thu:"Thursday",fri:"Friday",sat:"Saturday",sun:"Sunday",mon:"Monday"};
+byId("resultTitle").innerHTML=dayNames[day]+": three tailored options";
+byId("warningText").innerHTML=warnings[energy];
+
+var food=restaurants[vibe][budget];
+var drink=bars[vibe];
+var events=dayEvents[day];
+var late=lateFood[energy];
+var labels=["The polished option","The essential Decadence option","The beautiful mistake"];
+var html="";
+
+for(var i=0;i<3;i++){
+  var event=pick(events,i);
+  html+='<article class="card plan">';
+  html+='<span class="badge">Option '+(i+1)+'</span>';
+  html+='<h3>'+labels[i]+'</h3>';
+  html+='<div class="slot"><b>Eat</b>'+pick(food,i)+'</div>';
+  html+='<div class="slot"><b>Drink</b>'+pick(drink,i)+'</div>';
+  html+='<div class="slot"><b>Do</b>'+event[0]+'<div class="meta">'+event[1]+'</div></div>';
+  html+='<div class="slot"><b>After hours</b>'+pick(late,i)+'</div>';
+  html+='</article>';
+}
+byId("plans").innerHTML=html;
+}
+
+function init(){
+byId("build").onclick=build;
+var ids=["day","vibe","budget","energy"];
+for(var i=0;i<ids.length;i++){byId(ids[i]).onchange=build;}
+build();
+}
+if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",init);}else{init();}
+</script>
+</body>
+</html>
